@@ -54,9 +54,18 @@ li#logo-home.nav-item {
   margin: 0rem;
 }
 
-main {
+.container {
   margin: 0.5rem;
   padding: 0.5rem;
+}
+
+.container-about {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.art-about {
+  text-align: center;
 }
 
 footer {
