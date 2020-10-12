@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .header-text {
   color: blue;
 }
@@ -8,4 +12,43 @@
 
 .footer-text {
   color: darkgreen;
+}
+
+.nav-linkset {
+  background-color: #155204;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.nav-item {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-right: 1px solid #bbb;
+}
+
+.nav-item:hover {
+  background-color: #36c2109c;
+  transition-duration: 500ms;
+}
+
+/* children selector */
+.nav-item > a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-item > a:hover {
+  color: darkblue;
+  transition-duration: 500ms;
+}
+
+/* Logo on nav */
+li#logo-home.nav-item {
+  padding: 0rem;
+  margin: 0rem;
 }
